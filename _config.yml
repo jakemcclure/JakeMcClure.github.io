@@ -1,0 +1,30 @@
+title: CtrlAltMD
+email: holler@JakeMcClure.net
+description: Rebooting healthcare for the digital age
+baseurl:
+url: "https://JakeMcClure.github.io/" # the base hostname & protocol for your site
+twitter_username: Jake_McClure
+github_username:  JakeMcClure
+
+# Build settings
+#plugins:
+# - jekyll-coffeescript
+sass:
+  sass_dir: _sass
+markdown: kramdown
+permalink: /:year/:title/
+exclude: [
+  "node_modules",
+  "LICENSE",
+  "package.json",
+  "README.md",
+  "Gemfile",
+  "gulpfile.babel.js",
+  ".babelrc",
+  ".gitignore",
+  "sass",
+  "scss",
+  "validate",
+  "includes/amp",
+  "sandbox"
+]

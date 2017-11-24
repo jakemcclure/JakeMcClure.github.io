@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "CtrlAltMD",
+  "launch_path": "/index.html",
+  "description": "Rebooting healthcare for the digital age",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "",
+    "url": ""
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "CtrlAltMD",
+      "description": "Rebooting healthcare for the digital age"
+    }
+  }
+}
