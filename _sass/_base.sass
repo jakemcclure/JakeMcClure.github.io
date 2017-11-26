@@ -19,7 +19,7 @@ body
  * Set `margin-bottom` to maintain vertical rhythm
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, figure
 %vertical-rhythm
   margin-bottom: $spacing-unit / 2
 
@@ -29,8 +29,7 @@ img
   max-width: 100%
   vertical-align: middle
 
-/**
- * Figures
+/* Figures */
 figure > img
   display: block
 
@@ -50,20 +49,22 @@ li
 /**
  * Headings
 h1, h2, h3, h4, h5, h6
-  font-weight: 300
+  font-weight: $heading-weight
+  padding-top: $spacing-unit / 2
 
-/**
- * Links
+
+/* Links */
 a
   color: $brand-color
   text-decoration: none
 
   &:visited
-    color: darken($brand-color, 15%)
+    color: lighten($brand-color, 5%)
 
   &:hover
-    color: $text-color
-    text-decoration: underline
+    //color: $text-color
+    color: $brand-secondary
+    //text-decoration: underline
 
 /**
  * Blockquotes
@@ -78,8 +79,7 @@ blockquote
   > :last-child
     margin-bottom: 0
 
-/**
- * Code formatting
+/* Code formatting */
 pre,
 code
   font-size: 15px
@@ -99,40 +99,25 @@ pre
     padding-right: 0
     padding-left: 0
 
-/**
- * Wrapper
+/* Wrapper */
+// Removed margin from cropping full-width bg-colors
+// Less padding on mobile as less white-space is needing for reading
 .wrapper
   max-width: -webkit-calc(800px - (#{$spacing-unit} * 2))
   max-width: calc(800px - (#{$spacing-unit} * 2))
-  margin-right: auto
-  margin-left: auto
+  //margin-right: auto
+  //margin-left: auto
   padding-right: $spacing-unit
   padding-left: $spacing-unit
+  //padding-right: $spacing-unit / 2
+  //padding-left: $spacing-unit / 2
 
   @extend %clearfix
 
   +media-query($on-laptop)
     max-width: -webkit-calc(800px - (#{$spacing-unit}))
     max-width: calc(800px - (#{$spacing-unit}))
-    padding-right: $spacing-unit / 2
-    padding-left: $spacing-unit / 2
-
-/**
- * Clearfix
-%clearfix
-  &:after
-    content: ""
-    display: table
-    clear: both
-
-/**
- * Icons
-.icon
-  > svg
-    display: inline-block
-    width: 16px
-    height: 16px
-    vertical-align: middle
-
-    path
-      fill: $grey-color
+    //padding-right: $spacing-unit / 2
+    //padding-left: $spacing-unit / 2
+    padding-right: $spacing-unit / 4
+    padding-left: $spacing-unit / 4

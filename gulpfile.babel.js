@@ -43,8 +43,7 @@ gulp.task('minify-images', () => {
 // Concatenate, transpiles ES2015 code to ES5 and minify JavaScript.
 gulp.task('scripts', () => {
   gulp.src([
-    // Note: You need to explicitly list your scripts here in the right order
-    //       to be correctly concatenated
+    // Note: You need to explicitly list your scripts here in the right order to be correctly concatenated
     './_scripts/main.js'
   ])
     .pipe($.concat('main.min.js'))

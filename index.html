@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-
-<div class="home">
+<!--<div class="home">-->
+<div class="home wrapper">
   <!--<h1 class="page-heading">{{ site.title }}</h1>-->
 
-  <section>
+  <section id="hero">
     <a class="site-title" href="/{{ site.baseurl }}">
       <span class="title-key ctrl">Ctrl</span>
       <span class="title-key alt">Alt</span>
@@ -14,16 +14,22 @@ layout: default
     <p class="site-description font500">{{ site.description | upcase }}</p>
   </section>
 
-  <ul class="post-list" id="featured-loop">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%-d %b • %Y" | upcase }}</span>
+  <section id="featured-loop">
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%-d %b • %Y" | upcase }}</span>
 
-        <h2 class="post-list-title">
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+          <h2 class="post-list-title">
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+    </section>
+
+  <section id="social">
+    {% include social/twitter-follow.html %}
+  </section>
 
 </div>
