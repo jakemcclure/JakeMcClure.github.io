@@ -3,16 +3,23 @@ layout: default
 ---
 
 <div class="home">
+  <!--<h1 class="page-heading">{{ site.title }}</h1>-->
 
-  <h1 class="page-heading">{{ site.title }}</h1>
-  <p class="text">{{ site.description }}
+  <section>
+    <a class="site-title" href="/{{ site.baseurl }}">
+      <span class="title-key ctrl">Ctrl</span>
+      <span class="title-key alt">Alt</span>
+      <span class="title-key md">M.D.</span>
+    </a>
+    <p class="site-description font500">{{ site.description | upcase }}</p>
+  </section>
 
-  <ul class="post-list">
+  <ul class="post-list" id="featured-loop">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ post.date | date: "%-d %b • %Y" | upcase }}</span>
 
-        <h2>
+        <h2 class="post-list-title">
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
       </li>

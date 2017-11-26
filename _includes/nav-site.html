@@ -1,0 +1,18 @@
+<nav class="site-nav flex">
+  <a class="page-link flex flex-column items-center justify-center" href="/">
+    <i class="material-icons">home</i>
+    <label class="">HOME</label>
+    </a>
+{% for page in site.pages %}
+  {% if page.title %}
+  <a class="page-link flex flex-column items-center justify-center" href="{{ page.url | relative_url }}">
+    <i class="material-icons">{{page.nav_icon_ligature}}</i>
+    <label class="">{{ page.title }}</label>
+    </a>
+  {% endif %}
+{% endfor %}
+  <!--<a class="page-link flex flex-column items-center justify-center disabled" href="#">
+    <i class="material-icons">more_horiz</i>
+    <label class="">MORE</label>
+  </a>-->
+</nav>

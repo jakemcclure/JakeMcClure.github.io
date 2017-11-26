@@ -3,15 +3,17 @@
 
   {% include head.html %}
 
-  <body class="flex wrap column">
+  <!--<body class="flex wrap">-->
+  <body class="flex flex-column items-center">
 
     {% include header.html %}
 
-    <div class="page-content">
+    <!--<main class="page-content justify-center grow-1">-->
+    <main class="page-content flex light">
       <div class="wrapper">
         {{ content }}
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
 

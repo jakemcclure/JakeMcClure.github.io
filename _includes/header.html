@@ -1,16 +1,3 @@
-
-<header class="site-header row no-wrap">
-
-  <div class="wrapper">
-
-    <nav class="site-nav space-between">
-    {% for page in site.pages %}
-      {% if page.title %}
-      <a class="page-link" href="{{ page.url | relative_url }}">{{ page.title }}</a>
-      {% endif %}
-    {% endfor %}
-    </nav>
-
-  </div>
-
+<header class="site-header flex no-wrap justify-center">
+  {% include nav-site.html %}
 </header>
