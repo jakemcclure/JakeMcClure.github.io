@@ -6,5 +6,3 @@ permalink: /tools/
 nav_icon_ligature: build
 sitenav: true
 ---
-
-{{page.description}}

@@ -234,7 +234,7 @@ pre {
     color: #424242;
     text-decoration: none; }
 
-.site-description {
+.site-description, .page-description {
   font-size: 80%;
   letter-spacing: 0.02em;
   padding-left: 15px;
@@ -286,17 +286,17 @@ pre {
   color: #cfcfcf; }
 
 /* Posts */
-.post-header {
+.post-header, .page-heading {
   margin-bottom: 30px; }
 
-.post-title {
-  font-size: 2.4rem;
+.post-title, .page-title {
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: -1px;
   line-height: 1; }
   @media screen and (max-width: 800px) {
-    .post-title {
-      font-size: 36px; } }
+    .post-title, .page-title {
+      font-size: 1.85rem; } }
 
 .post-content {
   margin-bottom: 30px; }

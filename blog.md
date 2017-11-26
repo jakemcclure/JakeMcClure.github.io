@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog
-description: Recent thoughts
+description: Recent thoughts…
 permalink: /blog/
 nav_icon_ligature: chrome_reader_mode
 sitenav: true
