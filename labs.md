@@ -23,3 +23,9 @@ Paste the following "URL" for the corresponding mode of contact.
 
 
 ### Post-partum Depression Chatbot Screening
+
+
+### The Epic / Haiku / Cantu Wishlist
+Ho, ho, ho …it's that time of year. What I wish Santa Judy Faulkner and her elves up in Madison would deliver.
+
+[Add your suggestion to the wish list](mailto:holler@jakemcclure.net)
