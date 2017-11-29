@@ -16,6 +16,7 @@ theme_color: 3151a7
 collections:
   lab:
     output: true
+    permalink: /:collection/:name
 markdown: kramdown
 permalink: /:year/:title/
 exclude: [
