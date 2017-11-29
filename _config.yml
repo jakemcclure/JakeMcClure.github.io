@@ -13,6 +13,9 @@ id_f: 750992151742709
 #sass:
 #  sass_dir: _sass
 theme_color: 3151a7
+collections:
+  lab:
+    output: true
 markdown: kramdown
 permalink: /:year/:title/
 exclude: [
@@ -25,8 +28,10 @@ exclude: [
   ".babelrc",
   ".gitignore",
   "sass",
+  "_sass",
   "scss",
   "validate",
   "includes/amp",
-  "sandbox"
+  "sandbox",
+  "google*.html"
 ]
