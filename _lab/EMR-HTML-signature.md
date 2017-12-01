@@ -1,12 +1,11 @@
 ---
 title: EMR HTML Signature
 description:
-tag: EMR
+tag: EMR, Communication
 ---
+It's a [mobile-first](https://twitter.com/#mobileFirst) world we're living in… eventually our EMR's will catch up. A handful of EHR companies have developed a bare bones mobile version of their EHR.
 
-It's a [mobile-first](https://twitter.com/#mobileFirst)… eventually our EMR's will catch up.
-
-For now, make accessibility one-step easier for consultants and the primary clinician/team (if your EMR will allow embedded hyperlinks)
+For now (if your EMR will allow embedded hyperlinks), make accessibility one-step easier for consultants and/or the primary team:
 `[Name], [credentials]`
 
 Paste the following "URL" for the corresponding mode of contact.

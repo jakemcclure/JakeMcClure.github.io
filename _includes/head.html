@@ -59,8 +59,7 @@
 	</style>
 
   <style amp-custom>{% include main.css %}</style>
-  <script custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js" async></script>
-  {% include scripts.js %}
+  {% include scripts.html %}
 
   <link rel="apple-touch-icon" sizes="180x180" href="{{ " /images/favicons/apple-touch-icon.png " | relative_url }}">
 	<link rel="icon" type="image/png" sizes="32x32" href="{{ " /images/favicons/favicon-32x32.png " | relative_url }}">
@@ -80,7 +79,7 @@
 			"datePublished": "{{page.date}}"
 		}
 	</script>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,500,600,600i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Source+Sans+Pro:200,300,300i,400,500,600,600i,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--<link rel="stylesheet" href="{{ " /css/main.css " | relative_url }}">-->
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
