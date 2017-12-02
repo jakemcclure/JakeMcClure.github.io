@@ -1,5 +1,7 @@
 <head>
 	<meta charset="utf-8">
+  <script async custom-element="amp-analytics"
+    src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
 	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,6 +70,7 @@
 
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="{{ site.description }}">
+  <meta name="theme-color" content="#{{site.theme_color}}">
   <script async type="application/ld+json">
 		{
 			"@context": "http://schema.org",
@@ -84,5 +87,4 @@
 	<!--<link rel="stylesheet" href="{{ " /css/main.css " | relative_url }}">-->
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 	<link rel="manifest" href="{{ " /manifest.json " | relative_url }}">
-	<meta name="theme-color" content="#{{site.theme_color}}">
 </head>

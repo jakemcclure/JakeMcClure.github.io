@@ -1,17 +1,25 @@
-//#social
-  background-color: $lightgray
+body > main
+  flex-grow: 1
+/* Page content */
+// Added margin to reveal footer upon scroll-up &
+.page-content
+  z-index: 1
+  margin-bottom: 14em
+  padding: $spacing-unit 0
+  background-color: $background-color
+
+  section
+    padding-top: $spacing-unit
+    padding-bottom: $spacing-unit
+
+// Added max-width for widescreen desktop users.
+.home, .post, .page
+  max-width: 80em
 
 .title-key
   Border: 0.04em solid $grey-color
   border-radius: 0.2em
   padding: 0.3em 0.2em 0.1em 0.5em
-
-.font200
-  font-weight: 200
-.font300
-  font-weight: 300
-.font500
-  font-weight: 500
 
 /* Site header */
 .site-header
@@ -119,20 +127,6 @@
       display: block
       padding: 5px 10px
 
-/* Page content */
-// Added margin to reveal footer upon scroll-up &
-.page-content
-  z-index: 1
-  margin-bottom: 14em
-  padding: $spacing-unit 0
-
-  section
-    padding-top: $spacing-unit
-    padding-bottom: $spacing-unit
-
-// Added max-width for widescreen desktop users.
-.home, .post
-  max-width: 80em
 
 .page-heading
   font-size: 20px
@@ -155,7 +149,7 @@
 .post-meta
   padding-top: $spacing-unit / 4
   font-size: $small-font-size * 0.85
-  color: $grey-meta
+  color: $grey-color
 
 //.post-link
   display: block

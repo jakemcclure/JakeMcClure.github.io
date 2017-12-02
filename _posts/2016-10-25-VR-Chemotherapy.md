@@ -14,7 +14,7 @@ tags:
 ---
 Digging in to how leveraging the capabilities of VR can improve the patient experience in & with the healthcare system.
 
-<!-- excerpt -->
+<!--excerpt-->
 
 Virtual reality offers the ultimate escapism. For physicians and other healthcare professionals, it allows us to escape many. historic restraints in medical education & training. It opens up endless possibilities with regard to patient simulated learning (eg team-based crisis learning, surgical simulation).
 

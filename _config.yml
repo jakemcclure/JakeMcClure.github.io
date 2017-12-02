@@ -1,4 +1,5 @@
 title: Ctrl Alt MD
+author: Jake McClure, M.D.
 email: holler@JakeMcClure.net
 description: Rebooting healthcare for the digital age
 baseurl:
@@ -12,11 +13,31 @@ id_f: 750992151742709
 # - jekyll-coffeescript
 #sass:
 #  sass_dir: _sass
-theme_color: 3151a7
 collections:
   lab:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name/
+  tools:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      author: "Jake McClure, M.D."
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      excerpt_separator: "<!--excerpt-->"
+
+timezone: America/New_York
+theme_color: 3151a7
 markdown: kramdown
 permalink: /:year/:title/
 exclude: [

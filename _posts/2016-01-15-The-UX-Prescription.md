@@ -1,9 +1,7 @@
 ---
-layout: post
 title: UX – A Prescription For The Quadruple Aim
-author: Jake McClure
 subtitle:
-date: 2016-01-15 09:17:40 -0500
+date: 2016-01-15 09:17x -0500
 published: true
 thumbnail-image:  "/assets/posts/images/EMR-app-store.png"
 thumbnail-video:  "/assets/posts/mov/EMR-app-store.mp4"
@@ -18,7 +16,7 @@ tags:
 
 Whether a patient or provider, the chorus of dismal usability with our medical records systems is fortunately becoming a repeated refrain in healthcare conversations regarding the Quadruple Aim and more recently in discussions leading up to the final release of the MACRA. Unfortunately, the cart is being pushed ahead of the horse. The bane of present-day electronic medical record (EMR) systems can be distilled down to two little letters, **UX**.
 
-<!-- excerpt -->
+<!--excerpt-->
 
 Shortened to the abbreviation "UX", user experience is a buzzword in & around Silicon Valley.
 <div class="google-trends embed">
