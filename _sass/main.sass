@@ -6,20 +6,20 @@ $base-font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif
 $base-font-size:   16px
 $base-line-height: 1.5
 $base-font-weight: 300
-$heading-weight:   700
+$heading-weight:   600
 $small-font-size:  $base-font-size * 0.875
 
 $spacing-unit:     30px
 
 $text-color:       #414141
-$background-color: #fafafa
+$background-color: #fbfbfb
 //$background-color: #fcfcfc
 //$brand-color:      #2a7ae2
 $brand-color:      #3151a7
 $brand-secondary:  #ed3b05
 
 $grey-color:       #828282
-$lightgray:        #f9f9f9
+$lightgrey:        #f9f9f9
 $grey-meta:        lighten($grey-color, 30%)
 $grey-color-light: lighten($grey-color, 40%)
 $grey-color-dark:  darken($grey-color, 25%)
@@ -27,14 +27,11 @@ $grey-color-dark:  darken($grey-color, 25%)
 $on-palm:          600px
 $on-laptop:        800px
 
-
 // Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+// @include media-query($palm)
+//     .wrapper
+//         padding-right: $spacing-unit / 2
+//         padding-left: $spacing-unit / 2
 
 @mixin media-query($device)
     @media screen and (max-width: $device)
@@ -47,24 +44,15 @@ $on-laptop:        800px
     display: table
     clear: both
 
-.light
-  background-color: $background-color
-
-.font200
-  font-weight: 200
-.font300
-  font-weight: 300
-.font500
-  font-weight: 500
-.font600
-  font-weight: 600
-
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "_flex"
+@import "_mobile-first"
 @import "_darktheme"
+@import "_typography"
 @import "_base"
-@import "_amp"
 @import "_layout"
+@import "_flex"
+@import "_amp"
 @import "_footer"
 @import "_graphics"
 @import "_syntax-highlighting"
+@import "_demo"

@@ -28,13 +28,30 @@ defaults:
     values:
       layout: "default"
       author: "Jake McClure, M.D."
+      excerpt_separator: "<!--excerpt-->"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
   -
     scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-      excerpt_separator: "<!--excerpt-->"
+  -
+    scope:
+      path: "_lab"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_tools"
+    values:
+      layout: "page"
+
 
 timezone: America/New_York
 theme_color: 3151a7

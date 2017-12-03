@@ -5,21 +5,11 @@ layout: default
 <div class="home wrapper">
   <!--<h1 class="page-heading">{{ site.title }}</h1>-->
 
-  <section id="hero">
-    <a class="site-title font300" href="/{{ site.baseurl }}">
-      <span class="title-key ctrl">Ctrl</span>
-      <span class="title-key alt">Alt</span>
-      <span class="title-key md">M.D.</span>
-    </a>
-    <p class="site-description font500">{{ site.description | upcase }}</p>
-  </section>
-
   <section id="featured-loop">
     <ul class="post-list">
       {% for post in site.posts %}
         <li>
           <span class="post-meta">{{ post.date | date: "%-d %b • %Y" | upcase }}</span>
-
           <h2 class="post-list-title">
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           </h2>

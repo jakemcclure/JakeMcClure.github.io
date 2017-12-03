@@ -4,8 +4,25 @@
   display: table;
   clear: both; }
 
+/* Wrapper */
+/* Removed margin from cropping full-width bg-colors */
+/* Less padding on mobile as less white-space is needing for reading */
+.wrapper {
+  padding-right: 7.5px;
+  padding-left: 7.5px; }
+  @media screen and (min-width: 900px) {
+    .wrapper {
+      max-width: -webkit-calc(960px - (30px));
+      max-width: calc(960px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+.dark {
+  background-color: #424242;
+  color: #fbfbfb; }
+
 .light {
-  background-color: #fafafa; }
+  background-color: #fbfbfb; }
 
 .font200 {
   font-weight: 200; }
@@ -18,6 +35,223 @@
 
 .font600 {
   font-weight: 600; }
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure, main, aside, section, header, footer, nav {
+  margin: 0;
+  padding: 0; }
+
+/* Basic styling */
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #414141;
+  background-color: #fbfbfb;
+  -webkit-text-size-adjust: 100%; }
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm */
+.highlight {
+  margin-bottom: 15px; }
+
+/**
+ * Images */
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+/* Figures */
+figure > img {
+  display: block; }
+
+figcaption {
+  font-size: 14px; }
+
+/**
+ * Lists */
+ul, ol {
+  margin-left: 15px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  padding-top: 15px; }
+
+/* Links */
+a {
+  color: #3151a7;
+  text-decoration: none; }
+  a:hover {
+    color: #414141; }
+
+/**
+ * Blockquotes */
+blockquote {
+  color: #828282;
+  border-left: 0.25em solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+/* Code formatting */
+pre,
+code {
+  font-size: 15px;
+  border-radius: 3px;
+  background-color: #fff5f2;
+  border: 1px solid #fb5b2a; }
+
+code {
+  padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/* Wrapper */
+.container {
+  max-width: 45em; }
+
+/* Page content */
+.page-content {
+  z-index: 1;
+  margin-bottom: 14em;
+  padding: 30px 0;
+  background-color: #fbfbfb; }
+  .page-content section {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+.home, .post, .page {
+  max-width: 80em; }
+
+.site-title {
+  font-size: 1.2rem;
+  letter-spacing: -1px; }
+  .site-title, .site-title:hover, .site-title:visited {
+    color: #424242;
+    text-decoration: none; }
+
+.site-description, .page-description {
+  font-size: 70%;
+  letter-spacing: 0.04em;
+  padding-left: 7.5px;
+  color: #828282;
+  margin-top: 7.5px; }
+
+#hero {
+  padding: 2em 1em 0.5em;
+  background-color: #3151a7;
+  color: white; }
+  #hero .site-description {
+    color: white; }
+  #hero .site-title {
+    display: block;
+    max-width: 27em; }
+
+.title-key {
+  color: white;
+  Border: 0.04em solid white;
+  border-radius: 0.2em;
+  padding: 0.3em 0.2em 0.1em 0.5em; }
+
+/* Site header */
+.site-header {
+  font-family: "Karla", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid #e8e8e8;
+  height: 3.5rem; }
+
+.site-nav {
+  width: 100%;
+  max-width: 40em; }
+  .site-nav .page-link {
+    color: #3151a7;
+    width: 25vw;
+    font-size: 11.2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .site-nav .page-link:hover {
+      background-color: #828282;
+      color: #424242; }
+      .site-nav .page-link:hover .material-icons {
+        color: #424242; }
+
+.page-heading {
+  font-size: 20px; }
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+  line-height: 1; }
+  .post-list > li {
+    margin-bottom: 15px; }
+  .post-list .post-list-title {
+    padding-top: 7.5px;
+    font-weight: 500;
+    font-size: 100%; }
+
+.post-meta {
+  padding-top: 7.5px;
+  font-size: 11.9px;
+  color: #828282; }
+
+/* Posts */
+.post-header, .page-heading {
+  margin-bottom: 30px; }
+
+.post-title, .page-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.1; }
+  @media screen and (max-width: 800px) {
+    .post-title, .page-title {
+      font-size: 1.65rem; } }
+
+.post-content {
+  max-width: 42em;
+  margin-bottom: 30px; }
+
+.post-content h2, .page-content h2 {
+  font-size: 1.7rem; }
+  @media screen and (max-width: 800px) {
+    .post-content h2, .page-content h2 {
+      font-size: 1.55rem; } }
+
+.post-content h3, .page-content h3 {
+  font-size: 1.5rem; }
+  @media screen and (max-width: 800px) {
+    .post-content h3, .page-content h3 {
+      font-size: 1.3; } }
+
+.post-content h4, .page-content h4 {
+  font-size: 1.3rem; }
+  @media screen and (max-width: 800px) {
+    .post-content h4, .page-content h4 {
+      font-size: 1.15rem; } }
 
 .flex {
   display: flex; }
@@ -112,108 +346,6 @@
 .order2 {
   order: 2; }
 
-.dark {
-  background-color: #424242;
-  color: #fafafa; }
-
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure, main, aside, section, nav {
-  margin: 0;
-  padding: 0; }
-
-/* Basic styling */
-body {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 300;
-  color: #414141;
-  background-color: #fafafa;
-  -webkit-text-size-adjust: 100%; }
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm */
-.highlight {
-  margin-bottom: 15px; }
-
-/**
- * Images */
-img {
-  max-width: 100%;
-  vertical-align: middle; }
-
-/* Figures */
-figure > img {
-  display: block; }
-
-figcaption {
-  font-size: 14px; }
-
-/**
- * Lists */
-ul, ol {
-  margin-left: 15px; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0; }
-
-/**
- * Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  padding-top: 15px; }
-
-/* Links */
-a {
-  color: #3151a7;
-  text-decoration: none; }
-  a:hover {
-    color: #414141; }
-
-/**
- * Blockquotes */
-blockquote {
-  color: #828282;
-  border-left: 0.25em solid #e8e8e8;
-  padding-left: 15px;
-  font-size: 0.9rem;
-  letter-spacing: 0.01rem;
-  font-style: italic; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-/* Code formatting */
-pre,
-code {
-  font-size: 15px;
-  border-radius: 3px;
-  background-color: #fff5f2;
-  border: 1px solid #fb5b2a; }
-
-code {
-  padding: 1px 5px; }
-
-pre {
-  padding: 8px 12px;
-  overflow-x: scroll; }
-  pre > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0; }
-
-/* Wrapper */
-.wrapper {
-  padding-right: 30px;
-  padding-left: 30px; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      padding-right: 7.5px;
-      padding-left: 7.5px; } }
-
 .amp-social-share-box {
   padding-top: 15px; }
 
@@ -233,121 +365,6 @@ form.amp-form-submit-error [submit-error] {
 
 form.amp-form-submit-success.hide-inputs > input {
   display: none; }
-
-/* Page content */
-.page-content {
-  z-index: 1;
-  margin-bottom: 14em;
-  padding: 30px 0;
-  background-color: #fafafa; }
-  .page-content section {
-    padding-top: 30px;
-    padding-bottom: 30px; }
-
-.home, .post, .page {
-  max-width: 80em; }
-
-.title-key {
-  Border: 0.04em solid #828282;
-  border-radius: 0.2em;
-  padding: 0.3em 0.2em 0.1em 0.5em; }
-
-/* Site header */
-.site-header {
-  font-family: "Karla", "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  position: fixed;
-  z-index: 100;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  border-top: 1px solid #e8e8e8;
-  height: 3.5rem; }
-
-.site-title {
-  font-size: 1.2rem;
-  letter-spacing: -1px; }
-  .site-title, .site-title:hover, .site-title:visited {
-    color: #424242;
-    text-decoration: none; }
-
-.site-description, .page-description {
-  font-size: 80%;
-  letter-spacing: 0.02em;
-  padding-left: 15px;
-  color: #828282;
-  margin-top: 7.5px; }
-
-.site-nav {
-  width: 100%;
-  max-width: 40em; }
-  .site-nav .page-link {
-    color: #3151a7;
-    width: 25vw;
-    font-size: 11.2px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none; }
-    .site-nav .page-link:hover {
-      background-color: #828282;
-      color: #424242; }
-      .site-nav .page-link:hover .material-icons {
-        color: #424242; }
-
-.page-heading {
-  font-size: 20px; }
-
-.post-list {
-  margin-left: 0;
-  list-style: none;
-  line-height: 1; }
-  .post-list > li {
-    margin-bottom: 15px; }
-  .post-list .post-list-title {
-    padding-top: 7.5px;
-    font-weight: 500;
-    font-size: 100%; }
-
-.post-meta {
-  padding-top: 7.5px;
-  font-size: 11.9px;
-  color: #828282; }
-
-/* Posts */
-.post-header, .page-heading {
-  margin-bottom: 30px; }
-
-.post-title, .page-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: -1px;
-  line-height: 1.1; }
-  @media screen and (max-width: 800px) {
-    .post-title, .page-title {
-      font-size: 1.65rem; } }
-
-.post-content {
-  max-width: 42em;
-  margin-bottom: 30px; }
-
-.post-content h2, .page-content h2 {
-  font-size: 1.7rem; }
-  @media screen and (max-width: 800px) {
-    .post-content h2, .page-content h2 {
-      font-size: 1.55rem; } }
-
-.post-content h3, .page-content h3 {
-  font-size: 1.5rem; }
-  @media screen and (max-width: 800px) {
-    .post-content h3, .page-content h3 {
-      font-size: 1.3; } }
-
-.post-content h4, .page-content h4 {
-  font-size: 1.3rem; }
-  @media screen and (max-width: 800px) {
-    .post-content h4, .page-content h4 {
-      font-size: 1.15rem; } }
 
 /* Site footer */
 .site-footer {
@@ -630,3 +647,28 @@ form.amp-form-submit-success.hide-inputs > input {
   .highlight .il {
     /* Literal.Number.Integer.Long */
     color: #099; }
+
+.bg-grey {
+  background-color: #424242; }
+
+.post-list .date {
+  position: relative;
+  display: flex;
+  font-family: "Karla", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ff1a1a;
+  border-radius: 2px;
+  background-color: white; }
+  .post-list .date .year {
+    position: absolute;
+    top: 0;
+    padding: 4px;
+    background-color: #ff6666;
+    color: white;
+    text-transform: uppercase; }
+  .post-list .date .day {
+    padding: 8px;
+    color: #ff3333;
+    font-size: 120%;
+    font-weight: 700; }

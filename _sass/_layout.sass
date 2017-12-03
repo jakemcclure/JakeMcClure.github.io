@@ -1,3 +1,6 @@
+.container
+  max-width: 45em
+
 /* Page content */
 // Added margin to reveal footer upon scroll-up &
 .page-content
@@ -13,30 +16,6 @@
 // Added max-width for widescreen desktop users.
 .home, .post, .page
   max-width: 80em
-
-.title-key
-  Border: 0.04em solid $grey-color
-  border-radius: 0.2em
-  padding: 0.3em 0.2em 0.1em 0.5em
-
-/* Site header */
-.site-header
-  font:
-    family: 'Karla',$base-font-family
-    weight: $heading-weight
-  position: fixed
-  z-index: 100
-  bottom: 0
-  left: 0
-  right: 0
-  background-color: #fff
-  //border-top: 5px solid $grey-color-dark
-  border-top: 1px solid $grey-color-light
-  //min-height: 3.5rem
-  height: 3.5rem
-
-  // Positioning context for the mobile navigation icon
-  //position: relative
 
 .site-title
   //font-size: 26px
@@ -55,11 +34,46 @@
     text-decoration: none
 
 .site-description, .page-description
-  font-size: 80%
-  letter-spacing: 0.02em
-  padding-left: $spacing-unit / 2
+  font-size: 70%
+  letter-spacing: 0.04em
+  padding-left: $spacing-unit / 4
   color: $grey-color
   margin-top: $spacing-unit / 4
+
+
+#hero
+  padding: 2em 1em 0.5em
+  background-color: $brand-color
+  color: white
+  .site-description
+    color: white
+  .site-title
+    display: block
+    max-width: 27em
+.title-key
+  color: white
+  Border: 0.04em solid white
+  border-radius: 0.2em
+  padding: 0.3em 0.2em 0.1em 0.5em
+
+/* Site header */
+.site-header
+  font:
+    family: 'Karla',$base-font-family
+    weight: 700
+  position: fixed
+  z-index: 100
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: #fff
+  //border-top: 5px solid $grey-color-dark
+  border-top: 1px solid $grey-color-light
+  //min-height: 3.5rem
+  height: 3.5rem
+
+  // Positioning context for the mobile navigation icon
+  //position: relative
 
 .site-nav
   //float: right

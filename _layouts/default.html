@@ -3,13 +3,13 @@
 
   {% include head.html %}
 
-  <!--<body class="flex wrap">-->
-  <body class="flex flex-column items-center">
-
+  <!--<body class="flex flex-column wrap items-center">-->
+  <body class="flex flex-column wrap">
+    {% include hero.html %}
     {% include header.html %}
 
     <!--<main class="page-content justify-center grow-1">-->
-    <main class="page-content flex">
+    <main class="page-content flex justify-center">
       <!--<div class="wrapper"> </div>-->
         {{ content }}
     </main>

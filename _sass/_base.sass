@@ -1,7 +1,7 @@
 // Reset some basic elements
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure, main, aside, section, nav
+dl, dd, ol, ul, figure, main, aside, section, header, footer, nav
   margin: 0
   padding: 0
 
@@ -99,24 +99,20 @@ pre
     padding-left: 0
 
 /* Wrapper */
-// Removed margin from cropping full-width bg-colors
-// Less padding on mobile as less white-space is needing for reading
-.wrapper
-  //max-width: -webkit-calc(800px - (#{$spacing-unit} * 2))
-  //max-width: calc(800px - (#{$spacing-unit} * 2))
-  //margin-right: auto
-  //margin-left: auto
+//.wrapper
+  max-width: -webkit-calc(800px - (#{$spacing-unit} * 2))
+  max-width: calc(800px - (#{$spacing-unit} * 2))
+  margin-right: auto
+  margin-left: auto
   padding-right: $spacing-unit
   padding-left: $spacing-unit
-  //padding-right: $spacing-unit / 2
-  //padding-left: $spacing-unit / 2
+  padding-right: $spacing-unit / 2
+  padding-left: $spacing-unit / 2
 
   @extend %clearfix
 
   +media-query($on-laptop)
     max-width: -webkit-calc(800px - (#{$spacing-unit}))
     max-width: calc(800px - (#{$spacing-unit}))
-    //padding-right: $spacing-unit / 2
-    //padding-left: $spacing-unit / 2
-    padding-right: $spacing-unit / 4
-    padding-left: $spacing-unit / 4
+    padding-right: $spacing-unit / 2
+    padding-left: $spacing-unit / 2
