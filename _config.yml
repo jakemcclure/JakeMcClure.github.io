@@ -7,6 +7,7 @@ url: "https://JakeMcClure.github.io/" # the base hostname & protocol for your si
 twitter_username: Jake_McClure
 github_username:  JakeMcClure
 id_f: 750992151742709
+id_g: UA-76343771-1
 
 # Build settings
 #plugins:
@@ -51,8 +52,6 @@ defaults:
       path: "_tools"
     values:
       layout: "page"
-
-
 timezone: America/New_York
 theme_color: 3151a7
 markdown: kramdown
@@ -70,7 +69,6 @@ exclude: [
   "_sass",
   "scss",
   "validate",
-  "includes/amp",
   "sandbox",
   "google*.html"
 ]
