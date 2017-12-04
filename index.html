@@ -1,7 +1,11 @@
 ---
 layout: default
+siteNav: true
+siteNav_order: 1
+siteNav_label: home
+nav_icon_ligature: home
 ---
-<!--<div class="home">-->
+{% include hero.html %}
 <div class="home wrapper">
   <!--<h1 class="page-heading">{{ site.title }}</h1>-->
 
@@ -21,5 +25,4 @@ layout: default
   <section id="social">
     {% include social/twitter-follow.html %}
   </section>
-
 </div>

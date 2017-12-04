@@ -1,9 +1,10 @@
 ---
 title: Lab
 description: My sandbox for mHealth ideas and pre-production clinical tools
+siteNav: true
+siteNav_order: 3
+siteNav_label: lab
 nav_icon_ligature: healing
-sitenav: true
-sitenav_order: 3
 featured_image:
 featured_image_width:
 featured_image_height:

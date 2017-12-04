@@ -6,7 +6,7 @@
 .page-content
   z-index: 1
   margin-bottom: 14em
-  padding: $spacing-unit 0
+  padding: 0 0 $spacing-unit
   background-color: $background-color
 
   section
@@ -101,6 +101,11 @@
       .material-icons
         color: $grey-color-dark
 
+  .active
+    &, .material-icons
+      color: $brand-secondary
+
+
     // Gaps between nav items, but not on the first one -- now controlled via flexbox
     //&:not(:first-child)
       margin-left: 20px
@@ -186,8 +191,10 @@
 
 // Added max-width for widescreen desktop users.
 .post-content
+  font-size: 1.125rem
   max-width: 42em
-  margin-bottom: $spacing-unit
+  &, & p
+    @extend %vertical-rhythm
 
 .post-content, .page-content
   h2

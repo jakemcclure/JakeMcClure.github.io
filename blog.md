@@ -3,8 +3,10 @@ layout: page
 title: Blog
 description: Recent thoughts…
 permalink: /blog/
+siteNav: true
+siteNav_order: 2
+siteNav_label: blog
 nav_icon_ligature: chrome_reader_mode
-sitenav: true
 ---
 <ul class="post-list" id="featured-loop">
   {% for post in site.posts %}
