@@ -1,7 +1,7 @@
 ---
 title: UX – A Prescription For The Quadruple Aim
 subtitle:
-date: 2016-01-15 09:17x -0500
+date: 2016-01-15 09:17 -0500
 published: true
 thumbnail-image:  "/assets/posts/images/EMR-app-store.png"
 thumbnail-video:  "/assets/posts/mov/EMR-app-store.mp4"
