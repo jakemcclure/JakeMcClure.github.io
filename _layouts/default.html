@@ -5,12 +5,13 @@
 
   <!--<body class="flex flex-column wrap items-center">-->
   <body class="flex flex-column wrap">
-    {% include header.html %}
-
+    <nav class="site-header flex no-wrap justify-center">
+      {% include nav-site.html %}
+      </nav>
     <main class="page-content flex flex-column justify-center">
       <!--<div class="wrapper"> </div>-->
-        {{ content }}
-    </main>
+      {{ content }}
+      </main>
 
     {% include footer.html %}
     {% include amp/analytics.html %}
