@@ -4,6 +4,38 @@ reference: >
   https://www.ampproject.org/docs/guides/analytics/analytics-vendors
 ---
 <amp-analytics type="googleanalytics">
-  {% include amp/scripts/analytics-google.html %}
-  {% include amp/scripts/analytics-timer.html %}
+  <script type="application/json">
+  {
+    "vars": {
+      "account": "{{site.id_g}}"
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+      }
+    }
+  }
+  </script>
+
+  <script type="application/json">
+    {
+      "requests": {
+        "event": "https://{{}}&event=${eventId}"
+      },
+      "triggers": {
+        "pageTimer": {
+          "on": "timer",
+          "timerSpec": {
+            "interval": 10,
+            "maxTimerLength": 600
+          },
+          "request": "event",
+          "vars": {
+            "eventId": "timer"
+          }
+        }
+      }
+    }
+  </script>
 </amp-analytics>
