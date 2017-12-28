@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <!--<body class="flex flex-column wrap items-center">-->
-  <body class="flex flex-column wrap">
-    <nav class="site-header flex no-wrap justify-center">
-      {% include nav.html %}
-      </nav>
-    <main class="page-content flex flex-column justify-center">
-      <!--<div class="wrapper"> </div>-->
-      {{ content }}
-      </main>
+<!--<body class="flex flex-column wrap items-center">-->
 
-    {% include footer.html %}
-    {% include amp/analytics.html %}
-  <link async href="{{ "/scripts/main.min.js" | relative_url }}">
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register("{{ "/sw.js" | relative_url }}").then(function() {
-      console.log("Service Worker Registered");
-    });
-  }
-  </script>
-  </body>
+<body class="flex flex-column-wrap">
+	<nav class="site-header flex no-wrap justify-center">
+		{% include nav.html %}
+	</nav>
+	<main class="page-content flex flex-column justify-center">
+		<!--<div class="wrapper"> </div>-->
+		{{ content }}
+	</main>
+
+	{% include footer.html %} {% include amp/analytics.html %}
+	<link async href="{{ " /scripts/main.min.js " | relative_url }}">
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register("{{ " / sw.js " | relative_url }}").then(function() {
+				console.log("Service Worker Registered");
+			});
+		}
+	</script>
+</body>
 
 </html>

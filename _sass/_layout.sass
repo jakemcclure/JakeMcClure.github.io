@@ -45,6 +45,7 @@
   padding: 2em 1em 0.5em
   background-color: $brand-color
   color: white
+  height: 25vh
   .site-description
     color: white
   .site-title
@@ -157,7 +158,7 @@
   line-height: 1
 
   > li
-    margin-bottom: $spacing-unit / 2
+    margin-bottom: $spacing-unit * 0.75
   .post-list-title
     padding-top: $spacing-unit / 4
     font-weight: 500
@@ -181,6 +182,7 @@
 .post-title, .page-title
   //font-size: 42px
   font-size: 1.8rem
+  font-family: $heading-font-family
   font-weight: $heading-weight
   letter-spacing: -1px
   line-height: 1.1
@@ -188,6 +190,11 @@
   +media-query($on-laptop)
     //font-size: 36px
     font-size: 1.65rem
+
+.post
+  h1, h2, h3, h4, h5, h6
+    font-family: $heading-font-family
+    font-weight: $heading-weight
 
 // Added max-width for widescreen desktop users.
 .post-content
