@@ -112,8 +112,8 @@ pre,
 code {
   font-size: 15px;
   border-radius: 3px;
-  background-color: #fff5f2;
-  border: 1px solid #fb5b2a; }
+  background-color: white;
+  border: 1px solid #de8d80; }
 
 code {
   padding: 1px 5px; }
@@ -203,7 +203,7 @@ pre {
       .site-nav .page-link:hover .material-icons {
         color: #424242; }
   .site-nav .active, .site-nav .active .material-icons {
-    color: #ed3b05; }
+    color: #d36958; }
 
 .page-heading {
   font-size: 20px; }
@@ -384,7 +384,7 @@ form.amp-form-submit-success [submit-success] {
   color: #3151a7; }
 
 form.amp-form-submit-error [submit-error] {
-  color: #ed3b05; }
+  color: #d36958; }
 
 form.amp-form-submit-success.hide-inputs > input {
   display: none; }
